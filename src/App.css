@@ -5356,3 +5356,201 @@ body:has(button:hover) .custom-cursor {
     white-space: nowrap !important;
   }
 }
+
+
+/* =========================================================
+   FINAL RESPONSIVE OVERRIDES
+   Keep these rules at the very end of the stylesheet.
+   They only apply to tablet/mobile and leave desktop intact.
+========================================================= */
+
+@media (max-width: 900px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  img,
+  video,
+  iframe,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+
+  .about-section,
+  .skills-section,
+  .experience-section,
+  .projects-section,
+  .education-section,
+  .contact-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .skills-grid,
+  .about-stats,
+  .contact-content,
+  .achievement-columns {
+    min-width: 0;
+  }
+
+  .skill-group,
+  .about-stat,
+  .project-card,
+  .achievement-column,
+  .contact-intro,
+  .contact-links {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .experience-table,
+  .education-table {
+    max-width: 100%;
+  }
+
+  .experience-table-row,
+  .education-item {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero,
+  .about-section,
+  .skills-section,
+  .experience-section,
+  .projects-section,
+  .education-section,
+  .contact-section {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .hero-content,
+  .editorial-heading,
+  .skills-heading,
+  .experience-heading,
+  .education-heading,
+  .projects-intro,
+  .contact-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero h1,
+  .editorial-heading,
+  .skills-heading h2,
+  .experience-heading h2,
+  .education-heading h2,
+  .projects-intro h2,
+  .contact-intro h2 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .skills-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .experience-table-header {
+    display: none !important;
+  }
+
+  .experience-table-row {
+    display: block !important;
+    width: 100%;
+    padding: 24px 0 !important;
+  }
+
+  .experience-date-cell,
+  .experience-role-cell,
+  .experience-details-cell {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .projects-intro {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .projects-intro > p {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .project-card {
+    display: block !important;
+    width: 100%;
+    min-height: 0 !important;
+  }
+
+  .education-section table,
+  .experience-section table {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-content {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .contact-intro,
+  .contact-links,
+  .contact-section form {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .contact-section input,
+  .contact-section textarea,
+  .contact-section button {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero,
+  .about-section,
+  .skills-section,
+  .experience-section,
+  .projects-section,
+  .education-section,
+  .contact-section {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .about-stats {
+    gap: 8px;
+  }
+
+  .skill-group {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
